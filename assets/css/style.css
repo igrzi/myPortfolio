@@ -94,7 +94,7 @@ section{
 
 .blob:nth-child(3)
 {
-    filter: blur(100px);
+    filter: blur(85px);
 }
 
 .image{
@@ -125,4 +125,58 @@ section{
 
 #line-break{
     color: #090A0B;
+    background: #212529;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Roboto+Slab:wght@500&display=swap');
+
+.about-me
+{
+    background: #212529;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 58px;
+    font-weight: 900;
+    margin: 0;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text p{
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    margin: 0;
+    background: #212529;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.languages{
+    background-color: #212529;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.languages a{
+    font-size: 48px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 12px 32px;
+    opacity: 0.8;
+}
+
+.languages a:hover{
+    transition: 0.3s;
+    opacity: 1;
 }
