@@ -157,6 +157,33 @@ section{
     font-size: 24px;
 }
 
+.index-languages
+{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.index-languages a
+{
+    font-size: 48px;
+    color: inherit;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 32px 32px;
+    opacity: 0.8;
+    margin-bottom: 48px; 
+}
+
+.index-languages a:hover
+{
+    transition: 0.3s;
+    opacity: 1;
+}
+
 .languages{
     text-align: center;
     padding-top: 10px;
@@ -261,6 +288,9 @@ section{
 
 .languages 
 {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,6 +347,10 @@ section{
     .contactme-forms {
       width: 90%;
       margin: 50px auto 0 auto;
+    }
+
+    #cards{
+        flex-direction: column;
     }
 }
 
