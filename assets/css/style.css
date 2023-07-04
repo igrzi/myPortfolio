@@ -195,6 +195,27 @@ section{
     font-weight: 900;
 }
 
+.formacao-section .complementary-courses
+{
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+.formacao-section h2
+{
+    font-weight: 250;
+    color: white;
+}
+
+.formacao-section .paragraph
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 500px;
+}
+
 .formacao-section .brasao
 {
     width: 250px;
