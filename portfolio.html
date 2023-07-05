@@ -54,9 +54,9 @@
           <h5 class="card-title">Unsplash</h5>
           <p class="card-text">Unsplash is a leading online platform for high-quality free images for creative projects.</p>
           <div class="card-languages d-flex justify-content-center gap-4">
-            <a href="https://getbootstrap.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bootstrap"><i class="devicon-bootstrap-plain colored larger-icon"></i></a>
-            <a href="https://angular.io" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AngularJs"><i class="devicon-angularjs-plain colored larger-icon"></i></a>
-            <a href="https://www.typescriptlang.org" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Typescript"><i class="devicon-typescript-plain colored larger-icon"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#bootstrapModal"><i class="devicon-bootstrap-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bootstrap"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#angularModal"><i class="devicon-angularjs-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AngularJs"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#typescriptModal"><i class="devicon-typescript-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Typescript"></i></a>
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@
           <h5 class="card-title">Adoption System</h5>
           <p class="card-text">In my university course on Object-Oriented Programming, I created this straightforward Python app.</p>
           <div class="card-languages d-flex justify-content-center gap-4">
-            <a href="https://www.python.org" target="_blank" class="python" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Python"><i class="devicon-python-plain larger-icon"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#pythonModal" class="python"><i class="devicon-python-plain larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Python"></i></a>
             <a href="https://github.com/igrzi/adoption-system/tree/main" target="_blank" class="python" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Github"><i class="devicon-github-plain larger-icon"></i></a> 
           </div>
         </div>
@@ -83,13 +83,276 @@
           <h5 class="card-title">Coolors</h5>
           <p class="card-text">Coolors is an online platform that helps users generate and explore color palettes for creative projects.</p>
           <div class="card-languages d-flex justify-content-center gap-4">
-            <a href="https://svelte.dev" target="_blank"><i class="devicon-svelte-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Svelte"></i></a>
-            <a href="https://nodejs.org/en" target="_blank"><i class="devicon-nodejs-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="NodeJs"></i></a>
-            <a href="https://flutter.dev" target="_blank"><i class="devicon-flutter-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Flutter"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#svelteModal"><i class="devicon-svelte-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Svelte"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#nodeModal"><i class="devicon-nodejs-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="NodeJs"></i></a>
+            <a type="button" data-bs-toggle="modal" data-bs-target="#flutterModal"><i class="devicon-flutter-plain colored larger-icon" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Flutter"></i></a>
           </div>
         </div>
       </div>
 
+    </div>
+
+    <!-- Modals -->
+    
+    <!-- type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" -->
+
+    <div class="modal fade" id="bootstrapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-bootstrap-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel"> Bootstrap </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://getbootstrap.com">Bootstrap</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                Bootstrap is a front-end framework for responsive web design, it offers pre-designed templates, CSS styles, and JavaScript components, facilitating the creation of visually appealing websites across various devices.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Component Library:</strong> Bootstrap provides a comprehensive collection of pre-designed responsive components, allowing developers to quickly build visually appealing web interfaces without starting from scratch.</li>
+                <li><strong>Responsive Design:</strong> Bootstrap's responsive grid system enables developers to create layouts that adapt to different screen sizes, ensuring a consistent user experience across various devices.</li>
+                <li><strong>Time Efficiency:</strong> By leveraging Bootstrap's pre-built components and styles, developers can save time in designing and styling web pages, accelerating the front-end development process.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Lack of Uniqueness:</strong> As Bootstrap is widely used, websites or applications built with it may have a similar visual appearance unless customized extensively. This could result in a less distinctive or unique branding for certain projects.</li>
+                <li><strong>Overwhelming Default Styling:</strong> Bootstrap's default styling may not align with the desired visual design of a specific project, requiring additional effort to customize and override the default styles.</li>
+                <li><strong>Learning Curve for Customization:</strong> To fully leverage Bootstrap's potential, developers need to understand its class-based structure and customization options, which can have a learning curve for those new to the framework.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="angularModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-angularjs-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel"> AngularJs</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://angular.io">AngularJs</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                Angular is a popular open-source framework for building web applications. It utilizes TypeScript and offers a component-based architecture, providing developers with a structured approach to creating dynamic and scalable web applications.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Powerful Framework:</strong> Angular provides a complete solution for building complex web applications, offering features like robust data binding, dependency injection, and a powerful template system.</li>
+                <li><strong>Scalability:</strong> Angular's modular architecture and code organization make it suitable for large-scale projects with teams of developers, ensuring maintainability and code reusability.</li>
+                <li><strong>Active Community:</strong> Angular has a vibrant community, providing regular updates, extensive documentation, and a wide range of libraries and tools to enhance development productivity.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Learning Curve:</strong> Angular has a steeper learning curve compared to some other frameworks, requiring developers to grasp its concepts, such as modules, components, and services.</li>
+                <li><strong>Complexity:</strong> Angular's feature-rich nature can introduce complexity, and the framework's conventions and structure might require additional effort to fully understand and utilize effectively.</li>
+                <li><strong>Bundle Size:</strong> Angular applications tend to have larger bundle sizes compared to some other frameworks, which can impact initial loading times, especially on slower connections.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="typescriptModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-typescript-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel">Typescript</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://www.typescriptlang.org">Typescript</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                TypeScript is a programming language developed by Microsoft. It is a statically-typed superset of JavaScript that adds optional static typing and other features to enhance the development experience, improve code quality, and enable better tooling and error detection.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Type Safety:</strong> TypeScript introduces static typing, reducing runtime errors and enabling better code quality and maintainability.</li>
+                <li><strong>Enhanced Tooling:</strong> TypeScript offers rich IDE support, code autocompletion, and static analysis, improving developer productivity and catching errors early.</li>
+                <li><strong>JavaScript Compatibility:</strong> TypeScript is a superset of JavaScript, allowing easy integration with existing JavaScript codebases and gradual adoption of type annotations.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Overhead:</strong> TypeScript requires a compilation step to convert code to JavaScript, adding an extra build step to the development process.</li>
+                <li><strong>Learning Curve:</strong> Developers familiar with JavaScript may need to learn TypeScript's additional features and syntax, which can require some initial effort.</li>
+                <li><strong>Strictness:</strong> TypeScript's strong typing can sometimes feel restrictive, especially in more dynamic or prototype-based coding scenarios.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="pythonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-python-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel">Python</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://www.python.org">Python</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                Python is a high-level, versatile programming language known for its simplicity and readability. It has a large community and extensive libraries, making it suitable for a wide range of applications, including web development, data analysis, artificial intelligence, and automation.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Easy to Learn and Read:</strong>Python has a clean and intuitive syntax, making it beginner-friendly and easy to understand, enhancing productivity and collaboration among developers.</li>
+                <li><strong>Vast Standard Library</strong>: Python comes with a rich standard library that provides a wide range of modules and functions for various tasks, reducing the need for external dependencies.</li>
+                <li><strong>Versatility and Extensibility:</strong> Python is versatile, offering support for various domains such as web development, data analysis, scientific computing, artificial intelligence, and automation. It also allows easy integration with other languages.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Performance Limitations:</strong> Compared to lower-level languages like C++, Python can be slower in terms of execution speed, especially for computationally intensive tasks.</li>
+                <li><strong>Global Interpreter Lock (GIL): </strong>The Global Interpreter Lock in Python limits the ability to fully utilize multiple CPU cores in multi-threaded programs, potentially affecting performance in certain scenarios.</li>
+                <li><strong>Mobile Development Challenges:</strong> While Python can be used for mobile app development, it may not be the optimal choice for high-performance or resource-intensive mobile applications compared to other languages specifically designed for mobile development, like Kotlin or Swift.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="svelteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-svelte-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel">Svelte</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://svelte.dev">Svelte</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                Svelte is a modern JavaScript framework that compiles code during the build process, resulting in highly efficient and lightweight web applications. It offers a reactive approach to building user interfaces and focuses on minimalistic and declarative syntax, enabling faster rendering and better performance.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Lightweight and Performant:</strong> Svelte compiles code during the build process, resulting in highly efficient and smaller bundle sizes, leading to faster load times and improved performance.</li>
+                <li><strong>Simplified Syntax:</strong> Svelte's concise syntax reduces boilerplate code and provides a more intuitive approach to building user interfaces, making development more straightforward and productive.</li>
+                <li><strong>Integration and Interoperability:</strong> Svelte can easily integrate with existing projects or JavaScript libraries, allowing developers to leverage their preferred tools and ecosystem.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Smaller Ecosystem:</strong> Svelte has a smaller community and ecosystem compared to more established frameworks like React or Angular, which may limit the availability of third-party libraries and resources.</li>
+                <li><strong>Limited Tooling:</strong> While Svelte has its own set of tools, the tooling options and developer tool support may be comparatively narrower than some other frameworks.</li>
+                <li><strong>Maturity and Adoption:</strong> Svelte is a relatively newer framework, so it may not have the same level of maturity and adoption as more established alternatives. This can impact the availability of comprehensive documentation and community support.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="nodeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-nodejs-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel">NodeJs</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://nodejs.org/en">NodeJs</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                Node.js is a runtime environment that allows developers to run JavaScript code outside of a web browser. It uses an event-driven, non-blocking I/O model, making it well-suited for building scalable and performant server-side applications, networking tools, and backend services.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Scalable and Efficient:</strong> Node.js follows an event-driven, non-blocking I/O model, making it well-suited for building highly scalable and performant applications that can handle a large number of concurrent requests.</li>
+                <li><strong>Full-stack JavaScript:</strong> Node.js allows developers to use JavaScript on both the client-side and server-side, promoting code reuse, consistency, and easier communication between different layers of an application.</li>
+                <li><strong>Rich Ecosystem:</strong> Node.js has a vast ecosystem of libraries and modules available through npm, providing a wide range of tools and solutions to accelerate development.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Single-Threaded:</strong> Node.js runs on a single thread, which means it may not be the best choice for CPU-intensive tasks or scenarios that require heavy computational processing.</li>
+                <li><strong>Learning Curve:</strong> Developers who are new to event-driven, asynchronous programming may experience a learning curve when working with Node.js and understanding its non-blocking I/O approach.</li>
+                <li><strong>Callback Hell:</strong> Writing complex asynchronous code with multiple callbacks can sometimes lead to a coding pattern known as "callback hell," making code structure and maintenance more challenging.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="flutterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="devicon-flutter-plain larger-icon"></i><h1 class="modal-title fs-5" id="exampleModalLabel">Flutter</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Here goes the description-->
+            <div class="d-flex justify-content-center">
+              <p>Site oficial: <a class="siteOficial" target="_blank" href="https://flutter.dev">Flutter</a></p>
+            </div>
+            <div class="modalText">
+              <p> 
+                Flutter is Google's open-source SDK for building native-like mobile apps on iOS and Android from a single codebase using the Dart language. It offers customizable widgets and a fast rendering engine for smooth, responsive experiences.
+              </p>
+            </div>
+            <div>
+              <h3>Pros:</h3>
+              <ul>
+                <li><strong>Cross-Platform Development:</strong> Flutter allows developers to build high-quality mobile applications for both iOS and Android platforms from a single codebase, reducing development time and effort.</li>
+                <li><strong>Fast Performance:</strong> Flutter uses its own rendering engine to achieve fast and smooth performance, resulting in responsive and native-like user experiences.</li>
+                <li><strong>Hot Reload:</strong> Flutter's hot reload feature enables developers to instantly see changes in the application during the development process, facilitating faster iteration and debugging.</li>
+              </ul>
+              <br>
+              <h3>Limitations:</h3>
+              <ul>
+                <li><strong>Limited Native Features:</strong> While Flutter provides access to a wide range of features and functionality, some platform-specific capabilities or APIs may require additional integration or plugins.</li>
+                <li><strong>Immature Ecosystem:</strong> Compared to more established frameworks, Flutter's ecosystem is still evolving, which means there may be fewer libraries or resources available for certain niche requirements.</li>
+                <li><strong>Larger App Size:</strong> Flutter applications tend to have larger file sizes compared to some other native mobile development approaches, which can impact download and installation times.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--                            -->
