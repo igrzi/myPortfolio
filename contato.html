@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -33,6 +34,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="messages.html">Messages</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -43,18 +47,18 @@
     
     <div class="contactme-forms">
       <h2> Contact Me! </h2>
-      <form>
+      <form id="formulary">
         <div class="form-group">
           <label for="full-name">Full Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full name">
+          <input type="text" class="form-control" id="form-fullname" placeholder="Full name">
         </div>
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="your@email.com">
+          <input type="email" class="form-control" id="form-emailadress" placeholder="your@email.com">
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type here your message"></textarea>
+          <textarea class="form-control" id="form-message" rows="5" placeholder="Type here your message"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send It!</button>
       </form>
@@ -84,10 +88,54 @@
         <li>
           <a href="portfolio.html">Portfolio</a>
         </li>
+        <li>
+          <a href="messages.html">Messages</a>
+        </li>
       </ul>
       <p class="copyright">
         Igor Zimmer @ 2023
       </p>
     </footer>
+    <script>
+      
+      // Função para lidar com a submissão do formulário
+      function handleSubmit(event) {
+        event.preventDefault();
+  
+        const nameInput = document.getElementById("form-fullname");
+        const emailadressInput = document.getElementById("form-emailadress");
+        const messageInput = document.getElementById("form-message");
+  
+        const submissao = {
+          name: nameInput.value,
+          email: emailadressInput.value,
+          message: messageInput.value
+        };
+  
+        // Obter as submissões existentes no localStorage
+        const submissionString = localStorage.getItem("submissions");
+        let submissions = [];
+  
+        if (submissionString) {
+          submissions = JSON.parse(submissionString);
+        }
+  
+        // Adicionar a nova submissão à lista de submissões
+        submissions.push(submissao);
+  
+        // Salvar a lista de submissões atualizada no localStorage
+        localStorage.setItem("submissions", JSON.stringify(submissions));
+
+        // Limpar os campos
+        nameInput.value = ""
+        emailadressInput.value = ""
+        messageInput.value = ""
+      }
+  
+      // Adicionar evento de submissão do formulário
+      const form = document.getElementById("formulary");
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  
 </body>
 </html>
